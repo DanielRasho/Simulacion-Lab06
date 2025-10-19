@@ -22,13 +22,15 @@
           numpy
           matplotlib
           seaborn
-          imageio
         ]);
     in {
       default = pkgs.mkShell {
         packages = [
           python
           pkgs.ruff
+          pkgs.nodejs
+          pkgs.biome
+          pkgs.tailwindcss
         ];
       };
     });
