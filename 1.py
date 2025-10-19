@@ -315,7 +315,7 @@ print(f"Parámetros: {params}")
 sim = SIRParticleSimulation(**params)
 
 # Ejecutar simulación (T_max = tiempo máximo de simulación)
-anim = sim.run_simulation(T_max=100, save_animation=True, filename='sir_particle_simulation.mp4', format='mp4')
+anim = sim.run_simulation(T_max=100, save_animation=True, filename='sir_particle_simulation.gif', format='gif')
 
 # Mostrar resultados finales
 sim.plot_final_results()
